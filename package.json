@@ -7,8 +7,15 @@
 		"test": "jest"
 	},
 	"dependencies": {
+		"mobile-center-analytics": "^0.4.0",
+		"mobile-center-crashes": "^0.4.0",
 		"react": "16.0.0-alpha.6",
-		"react-native": "0.43.4"
+		"react-addons-perf": "^15.4.2",
+		"react-addons-test-utils": "^15.5.1",
+		"react-dom": "^15.5.4",
+		"react-native": "0.43.4",
+		"react-native-code-push": "^2.0.3-beta",
+		"reactxp": "^0.42.0-rc.4"
 	},
 	"devDependencies": {
 		"babel-jest": "20.0.0",
