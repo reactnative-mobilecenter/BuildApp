@@ -8,6 +8,10 @@
  */
 
 #import "AppDelegate.h"
+#import <RNAnalytics/RNAnalytics.h>
+
+#import <RNCrashes/RNCrashes.h>
+
 #import <CodePush/CodePush.h>
 
 #import <React/RCTBundleURLProvider.h>
@@ -18,6 +22,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   NSURL *jsCodeLocation;
+
+  [RNAnalytics registerWithInitiallyEnabled:true];  // Initialize Mobile Center analytics
+
+  [RNCrashes registerWithCrashDelegate: [[RNCrashesDelegateAlwaysSend alloc] init]];  // Initialize Mobile Center crashes
 
   
 #ifdef DEBUG
