@@ -1,3 +1,4 @@
 <resources>
+    <string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">g2DA6iOBPHetqNt74SMuGpW5k18TVy-rxPqTM</string>
     <string name="app_name">jokesapp</string>
 </resources>
