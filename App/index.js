@@ -10,13 +10,10 @@ import {
 import Analytics from 'mobile-center-analytics';
 
 export default class jokesapp extends Component {
-  track() {
-    Analytics.trackEvent('Button Press');
-  }
 
   state = { joke: '...' }
   handlePress(e) {
-    track();
+    Analytics.trackEvent('Clicked on button');
     this.setState({ joke: '...' })
     fetch('https://icanhazdadjoke.com/', { headers: { Accept: 'text/plain' } }).then(r => r.text())
       .then(joke => this.setState({ joke }));
